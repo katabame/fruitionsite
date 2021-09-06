@@ -181,7 +181,7 @@ class HeadRewriter {
   element(element) {
     if (GOOGLE_FONT !== "") {
       element.append(
-        `<link href='https://fonts.googleapis.com/css?family=${GOOGLE_FONT.replace(' ', '+')}:Regular,Bold,Italic&display=swap' rel='stylesheet'>
+        `<link href='https://fonts.googleapis.com/css2?family=${GOOGLE_FONT.replace(' ', '+')}&display=swap' rel='stylesheet'>
         <style>* { font-family: "${GOOGLE_FONT}" !important; }</style>`,
         {
           html: true
